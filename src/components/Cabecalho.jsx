@@ -12,6 +12,11 @@ function Cabecalho() {
       </h1>
       <Menu />
       <hr />
+
+      {/* Template string para css global e modulo */}
+      <p className={`${estilos["destaque-texto"]} centralizar`}>
+        Classes Combinadas
+      </p>
     </header>
   );
 }
