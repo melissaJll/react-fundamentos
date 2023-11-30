@@ -10,7 +10,7 @@ function Rodape() {
   return (
     <footer style={exemploEstilos}>
       <hr />
-      <h2>Rodapé</h2>
+      <h2 style={{ textAlign: "center" }}>Rodapé</h2>
     </footer>
   );
 }
