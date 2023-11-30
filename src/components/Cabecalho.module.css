@@ -2,10 +2,14 @@
   text-shadow: green 2px 2px 5px;
 }
 
+/* Tags são globais então sempre são aplicadas */
 hr {
   height: 4px;
   border: none;
   background-color: rgb(240, 166, 76);
   width: 50%;
   margin: auto;
+}
+.destaque-texto {
+  text-transform: uppercase;
 }

@@ -1,3 +1,5 @@
+/* GLOBAL no main? */
+
 *,
 *::after,
 *::before {
@@ -21,4 +23,9 @@ body {
 .sombra {
   box-shadow: red 0 0 10px;
   background-color: aliceblue;
+}
+.destaque-texto {
+  background-color: yellow;
+  padding: 4px;
+  border-radius: 4px;
 }
