@@ -16,3 +16,4 @@
 ## Iniciar o servidor, dar suporte ao uso via Rede e abrir o navegador automaticamente
 
 `npm run dev -- --host 0.0.0.0 --open`
+`npm run dev -- --host`
