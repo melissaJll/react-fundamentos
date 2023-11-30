@@ -1,4 +1,4 @@
-import Conteudo from "./components/Conteudo";
+import Conteudo from "./components/Cabecalho/Conteudo";
 import Rodape from "./components/Rodape";
 import Cabecalho from "./components/Cabecalho";
 

@@ -13,3 +13,7 @@ hr {
 .destaque-texto {
   text-transform: uppercase;
 }
+
+.fundoBranco {
+  background-color: aliceblue;
+}

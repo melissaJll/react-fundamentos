@@ -25,10 +25,18 @@ body {
   background-color: aliceblue;
 }
 .destaque-texto {
-  background-color: yellow;
+  /* background-color: rgb(82, 109, 199); */
   padding: 4px;
   border-radius: 4px;
 }
 .centralizar {
   text-align: center;
+}
+.separar {
+  margin: 25px auto;
+}
+
+.fundo-verde {
+  background-color: rgb(131, 190, 171);
+  padding: 25px;
 }

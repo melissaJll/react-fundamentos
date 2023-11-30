@@ -1,7 +1,7 @@
 //{} significa js  e {{objeto}}
 function Rodape() {
   const exemploEstilos = {
-    backgroundColor: "lightblue",
+    backgroundColor: "white",
     padding: "2%",
     color: "purple",
     border: "solid 4px #8ac4d7",
@@ -13,7 +13,7 @@ function Rodape() {
       <h2 style={{ textAlign: "center" }}>Rodapé</h2>
       <p className="destaque-texto centralizar">Fundamentos de React</p>
       <p>
-        Experimentando <b className="sombra">classes</b>
+        Experimentando <b>classes</b>
       </p>
     </footer>
   );
