@@ -1,8 +1,30 @@
+import styled from "styled-components";
 import Artigo from "./Artigo";
+
+const StyledConteudo = styled.main`
+  width: 90vw;
+  margin: 1rem auto;
+  background-color: #f3f3ed;
+  padding: 1rem;
+  box-shadow: #085508 0px 0px 1px inset;
+
+  h2,
+  p {
+    padding: 0.2rem 0;
+  }
+  article {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+`;
 
 function Conteudo() {
   return (
-    <main>
+    <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
         <p>
@@ -11,12 +33,13 @@ function Conteudo() {
           consectetur, adipisicing elit. Rerum ullam qui fuga sit neque? Dicta
           repellendus fuga nihil consectetur, animi porro a molestias!
         </p>
-
-        <Artigo />
-        <Artigo />
-        <Artigo />
+        <article>
+          <Artigo />
+          <Artigo />
+          <Artigo />
+        </article>
       </section>
-    </main>
+    </StyledConteudo>
   );
 }
 export default Conteudo;
