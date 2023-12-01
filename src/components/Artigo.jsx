@@ -9,7 +9,7 @@ const StyledArtigo = styled.article`
   justify-content: space-evenly;
   flex-direction: column;
   @media (min-width: 650px) {
-    width: 27%;
+    width: 29%;
     height: 140px;
   }
 
