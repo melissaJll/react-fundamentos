@@ -5,15 +5,15 @@ const StyledMenu = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  //hover aninhado
   a {
     text-decoration: none;
     color: white;
     padding: 7px;
-  }
-  a:hover {
-    background-color: #cc75be;
-    color: #3b2d2d;
+    &:hover {
+      background-color: #a575cc;
+      color: #3b2d2d;
+    }
   }
 `;
 
