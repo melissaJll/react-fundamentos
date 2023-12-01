@@ -8,8 +8,14 @@ const StyledMenu = styled.nav`
   //hover aninhado
   a {
     text-decoration: none;
-    color: white;
-    padding: 7px;
+    color: #fcf6f6;
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 100ms;
+
     &:hover {
       background-color: #a575cc;
       color: #3b2d2d;
