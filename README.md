@@ -1,5 +1,9 @@
 # Fundamentos de React
 
+## 05-styled-components
+
+`npm install styled-components`
+
 ## Resumo/Revisão
 
 JSX -> HTML + JS para criar componentes
@@ -27,3 +31,4 @@ JSX -> HTML + JS para criar componentes
 A renderização ocorre na seguinte sequencia:
 
 index.html <- main.jsx <- App.jsx
+`npm run dev -- --host`
