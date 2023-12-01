@@ -5,8 +5,8 @@ import styled from "styled-components";
 //Especifica que será dentro do header``
 const StyledCabecalho = styled.header`
   //header{
-  background-color: #f3b2bd;
-  color: white;
+  background-color: #bbd6b4;
+  color: #fcf6f6;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
