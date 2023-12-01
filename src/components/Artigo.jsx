@@ -6,6 +6,7 @@ const StyledArtigo = styled.article`
   margin: 0.5rem 0;
   border-radius: 2px;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   @media (min-width: 650px) {
     width: 27%;
