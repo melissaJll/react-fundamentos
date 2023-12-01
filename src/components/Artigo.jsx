@@ -13,8 +13,8 @@ const StyledArtigo = styled.article`
   }
 
   h3 {
-    background-color: #e6e6bc;
-    border-bottom: solid #9db860 3px;
+    color: #9db860;
+    border-bottom: solid #9db860 2px;
   }
 
   p {
