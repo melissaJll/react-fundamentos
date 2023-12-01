@@ -12,7 +12,7 @@ const StyledConteudo = styled.main`
   p {
     padding: 0.2rem 0;
   }
-  article {
+  .artigos {
     display: flex;
     justify-content: space-evenly;
 
@@ -33,11 +33,11 @@ function Conteudo() {
           consectetur, adipisicing elit. Rerum ullam qui fuga sit neque? Dicta
           repellendus fuga nihil consectetur, animi porro a molestias!
         </p>
-        <article>
+        <div className="artigos">
           <Artigo />
           <Artigo />
           <Artigo />
-        </article>
+        </div>
       </section>
     </StyledConteudo>
   );
