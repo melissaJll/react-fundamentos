@@ -34,9 +34,12 @@ function Conteudo() {
           repellendus fuga nihil consectetur, animi porro a molestias!
         </p>
         <div className="artigos">
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo
+            titulo="Senhor dos Anéis"
+            descricao="Livro criado por Token"
+          />
+          <Artigo titulo="Game of Thrones" descricao="Ficção e morte" />
+          <Artigo titulo="HTML5 & CSS3" descricao="Fonte de estudo front-end" />
         </div>
       </section>
     </StyledConteudo>
