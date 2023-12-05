@@ -10,7 +10,6 @@ const StyledArtigo = styled.article`
   flex-direction: column;
   @media (min-width: 650px) {
     width: 29%;
-    height: 140px;
   }
 
   h3 {
@@ -26,18 +25,23 @@ const StyledArtigo = styled.article`
   }
 `;
 // Definindo props para o componente ficar dinâmico
-function Artigo(props) {
+// (props) = {imagem, icone ...} desestruturando o props e agota tem acesso direto
+function Artigo({ imagem, icone, titulo, data, descricao, children }) {
   return (
     <StyledArtigo>
       <p className="centralizar">
-        <img src={props.imagem}></img>
+        <img src={imagem}></img>
       </p>
+
       <h3>
-        <span>{props.icone}</span> {props.titulo}
+        <span>{icone}</span> {titulo}
       </h3>
-      <p> {props.descricao}</p>
-      <p>Lançamento: {props.data}</p>
-      {props.children}
+
+      <p> {descricao}</p>
+
+      <p>Lançamento: {data}</p>
+
+      {children}
     </StyledArtigo>
   );
 }
