@@ -47,30 +47,50 @@ function Conteudo() {
         </p>
 
         <div className="artigos">
-          {/* Props são parametros para função artigo*/}
+          {/* Props*/}
           <Artigo
             data={datas[0]}
-            icone="🐱‍👓"
+            icone="✔"
             titulo="Senhor dos Anéis"
             descricao="Livro criado por Tolkien"
             imagem={imagem1}
-          />
+          >
+            <h4>Volumes</h4>
+            <ul>
+              <li>A Sociedade do anél</li>
+              <li>As Duas Torres</li>
+              <li>O Retorno do Rei</li>
+            </ul>
+          </Artigo>
 
           <Artigo
             data={datas[1]}
-            icone="🐱"
+            icone="✔"
             titulo="Game of Thrones"
             descricao="Ficção e morte"
             imagem={imagem2}
-          />
+          >
+            <h4>Defuntos no Livro</h4>
+            <ol>
+              <li>Um cara</li>
+              <li>Outro cara</li>
+              <li>Todos</li>
+            </ol>
+          </Artigo>
 
           <Artigo
             data={datas[2]}
-            icone="🎉"
+            icone="✔"
             titulo="HTML5 & CSS3"
             descricao="Fonte de estudo front-end"
             imagem={imagem3}
-          />
+          >
+            <h4>Assuntos</h4>
+            <details>
+              <summary>Abra</summary>
+              Teste Lorem ipsum dolor sit amet consectetur adipisicing.
+            </details>
+          </Artigo>
         </div>
       </section>
     </StyledConteudo>
