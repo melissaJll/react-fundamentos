@@ -9,7 +9,9 @@ const StyledArtigo = styled.article`
   justify-content: space-evenly;
   flex-direction: column;
   @media (min-width: 650px) {
-    width: 29%;
+    //0 650
+    width: 35%;
+    flex-wrap: wrap;
   }
 
   h3 {
@@ -26,22 +28,26 @@ const StyledArtigo = styled.article`
 `;
 // Definindo props para o componente ficar dinâmico
 // (props) = {imagem, icone ...} desestruturando o props e agota tem acesso direto
-function Artigo({ imagem, icone, titulo, data, descricao, children }) {
+function Artigo({ titulo, categoria, preco, id }) {
+  function formataReal(valor) {
+    return valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  }
   return (
     <StyledArtigo>
-      <p className="centralizar">
-        <img src={imagem}></img>
-      </p>
-
       <h3>
-        <span>{icone}</span> {titulo}
+        <span>{categoria}</span>
       </h3>
 
-      <p> {descricao}</p>
+      <p>
+        <b>Curso:</b> {titulo}
+      </p>
 
-      <p>Lançamento: {data}</p>
-
-      {children}
+      <p>
+        <b>Preço:</b> {formataReal(preco)}
+      </p>
     </StyledArtigo>
   );
 }
