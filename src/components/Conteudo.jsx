@@ -23,7 +23,8 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
-  const datas = ["23-05-2019", "17-04-2020", "30-03-2013"];
+  const datas = ["23-05-2019", "17-04-2020", "30-03-2013"]; //array datas[0]
+  //objeto datas.dia
 
   return (
     <StyledConteudo>
