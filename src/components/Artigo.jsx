@@ -30,6 +30,7 @@ function Artigo(props) {
         <span>{props.icone}</span> {props.titulo}
       </h3>
       <p> {props.descricao}</p>
+      <p>Lançamento: {props.data}</p>
     </StyledArtigo>
   );
 }

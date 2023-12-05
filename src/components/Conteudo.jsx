@@ -23,6 +23,8 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const datas = ["23-05-2019", "17-04-2020", "30-03-2013"];
+
   return (
     <StyledConteudo>
       <section>
@@ -33,20 +35,25 @@ function Conteudo() {
           consectetur, adipisicing elit. Rerum ullam qui fuga sit neque? Dicta
           repellendus fuga nihil consectetur, animi porro a molestias!
         </p>
+
         <div className="artigos">
+          {/* Props */}
           <Artigo
+            data={datas[0]}
             icone="🐱‍👓"
             titulo="Senhor dos Anéis"
             descricao="Livro criado por Token"
           />
 
           <Artigo
+            data={datas[1]}
             icone="🐱"
             titulo="Game of Thrones"
             descricao="Ficção e morte"
           />
 
           <Artigo
+            data={datas[2]}
             icone="🎉"
             titulo="HTML5 & CSS3"
             descricao="Fonte de estudo front-end"
