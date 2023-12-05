@@ -47,7 +47,7 @@ function Conteudo() {
         </p>
 
         <div className="artigos">
-          {/* Props */}
+          {/* Props são parametros para função artigo*/}
           <Artigo
             data={datas[0]}
             icone="🐱‍👓"
