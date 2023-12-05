@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import Artigo from "./Artigo";
 
+// Importando os assets de imagem
+import imagem1 from "../assets/abra-o-livro.png";
+import imagem2 from "../assets/livro-magico.png";
+import imagem3 from "../assets/pilha-de-livros.png";
+
 const StyledConteudo = styled.main`
   width: 90vw;
   margin: 1rem auto;
@@ -30,6 +35,10 @@ function Conteudo() {
     <StyledConteudo>
       <section>
         <h2>Conteúdo da aplicação</h2>
+        {/* <img
+          src="https://www.facev.org.br/wp-content/uploads/2021/10/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK.png"
+          alt=""
+        /> height=100px*/}
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
           iure facere vitae impedit. Sequi. Lorem ipsum dolor sit amet <br />
@@ -43,7 +52,8 @@ function Conteudo() {
             data={datas[0]}
             icone="🐱‍👓"
             titulo="Senhor dos Anéis"
-            descricao="Livro criado por Token"
+            descricao="Livro criado por Tolkien"
+            imagem={imagem1}
           />
 
           <Artigo
@@ -51,6 +61,7 @@ function Conteudo() {
             icone="🐱"
             titulo="Game of Thrones"
             descricao="Ficção e morte"
+            imagem={imagem2}
           />
 
           <Artigo
@@ -58,6 +69,7 @@ function Conteudo() {
             icone="🎉"
             titulo="HTML5 & CSS3"
             descricao="Fonte de estudo front-end"
+            imagem={imagem3}
           />
         </div>
       </section>
