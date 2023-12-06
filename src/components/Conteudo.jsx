@@ -50,7 +50,8 @@ function Conteudo() {
         <button onClick={exemplo2}>Exemplo 2</button>
 
         {/* Acionando função atraves do Conteudo pai */}
-        <button onClick={exemplo3}>
+        {/* //Função intermediaria const = () =>{} para sintaxe da função com parametro funcionar */}
+        <button onClick={() => exemplo3(" Função Pai")}>
           Exemplo 3 <br />
           Acionando função <br />
           atraves do Conteudo [pai]
