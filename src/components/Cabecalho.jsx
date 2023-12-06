@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Menu from "./Menu";
 // Impportação da lib styled components
 import styled from "styled-components";
@@ -21,6 +22,10 @@ const StyledCabecalho = styled.header`
 `;
 
 function Cabecalho() {
+  // Usando gerenciador de states, aqui definimos a chamada de uma função especial do React: "useState".Está e outras funções iniciadas com o prefixo 'use' são conhecidas como React Hooks
+  // No caso do useState usando desestruturação [] criamos uma variavel que representa o valor do state (titulo) e uma funçãp responsável por atualizar o state(setTitulo);
+  const [titulo, setTitulo] = useState("Olá React 😊");
+
   return (
     <StyledCabecalho>
       <h1>Olá React 😊</h1>
