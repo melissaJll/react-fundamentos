@@ -1,5 +1,20 @@
 # Fundamentos de React
 
+## 09-gerenciamento de-estados-dos-componentes
+
+`Estado` ou `states` é uma propriedade especial de um componente que pode ser alterada ao longo do tempo. Por exemplo, um componente que exibe contador de **likes** precisa de um gerenciamento de `states` para controlar a quantidade de **likes** recebidos
+
+O uso de `states` permite ao React reagir as mudanças de renderização dos componentes.
+
+### Exemplo de mudanças que podem ser gerenciados por states
+
+- Captura de dados de formulário
+- Visibilidade de componentes
+- Filtros e buscas de daddos
+- Contadores
+- Temas/Estilos
+- Pontuação/Vida de um jogador num jogo
+
 ## 06-props
 
 São parametros/argumentos com valores/expressões passadas para os componentes React, normalmente usados para injeção de dados dinâmicos. As `props` funcionam como objetos, e cada `prop` driada por você passa a ter propriedades deste objeto.
