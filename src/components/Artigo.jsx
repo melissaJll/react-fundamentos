@@ -1,5 +1,32 @@
 import styled from "styled-components";
 
+// Definindo props para o componente ficar dinâmico
+// (props) = {imagem, icone ...} desestruturando o props e agota tem acesso direto
+function Artigo({ titulo, categoria, preco, id, hadleClick }) {
+  function formataReal(valor) {
+    return valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  }
+  return (
+    <StyledArtigo>
+      {/* O componente filho(artigo) recebe através da prop hadleClick a referencia à função exemplo3 existente no componente pai(conteudo) */}
+      <h3 onClick={hadleClick}>
+        <span>{categoria}</span>
+      </h3>
+
+      <p>
+        <b>Curso:</b> {titulo}
+      </p>
+
+      <p>
+        <b>Preço:</b> {formataReal(preco)}
+      </p>
+    </StyledArtigo>
+  );
+}
+
 const StyledArtigo = styled.article`
   background-color: #c5cfae;
   padding: 1rem;
@@ -26,30 +53,5 @@ const StyledArtigo = styled.article`
     text-align: center;
   }
 `;
-// Definindo props para o componente ficar dinâmico
-// (props) = {imagem, icone ...} desestruturando o props e agota tem acesso direto
-function Artigo({ titulo, categoria, preco, id }) {
-  function formataReal(valor) {
-    return valor.toLocaleString("pt-br", {
-      style: "currency",
-      currency: "BRL",
-    });
-  }
-  return (
-    <StyledArtigo>
-      <h3>
-        <span>{categoria}</span>
-      </h3>
-
-      <p>
-        <b>Curso:</b> {titulo}
-      </p>
-
-      <p>
-        <b>Preço:</b> {formataReal(preco)}
-      </p>
-    </StyledArtigo>
-  );
-}
 
 export default Artigo;

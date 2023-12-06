@@ -35,7 +35,11 @@ const StyledConteudo = styled.main`
 
 function Conteudo() {
   const exemplo2 = () => {
-    alert("Exemplo 2");
+    alert("Exemplo 2 ");
+  };
+
+  const exemplo3 = (valor) => {
+    alert("Exemplo 3 " + valor);
   };
 
   return (
@@ -44,6 +48,13 @@ function Conteudo() {
         <h2 className="centralizar">Conteúdo da aplicação</h2>
 
         <button onClick={exemplo2}>Exemplo 2</button>
+
+        {/* Acionando função atraves do Conteudo pai */}
+        <button onClick={exemplo3}>
+          Exemplo 3 <br />
+          Acionando função <br />
+          atraves do Conteudo [pai]
+        </button>
 
         <p className="centralizar">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
@@ -56,6 +67,11 @@ function Conteudo() {
           {cursos.map((curso) => (
             // e return um artigo
             <Artigo
+              // É necessario criar uma prop para passar a chamada/referencia da função do componente pai.Essa tem como parametro prop categoria do artigo
+              // aoClicar = {}
+              hadleClick={() => {
+                exemplo3(curso.categoria);
+              }}
               key={curso.id}
               titulo={curso.titulo}
               categoria={curso.categoria}
