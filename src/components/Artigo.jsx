@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const StyledArtigo = styled.article`
-  background-color: #c5cfae;
+  //background-color: #c5cfae;
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 2px;
@@ -40,8 +40,8 @@ function Artigo({ titulo, categoria, preco, id }) {
   const [cor, setCor] = useState("#c5cfae");
 
   const mudarCor = () => {
-    // if (cor == "#c5cfae") setCor("lightblue");
-    setCor("lightblue");
+    cor == "#c5cfae" ? setCor("lightblue") : setCor("#c5cfae");
+    //setCor("lightblue");
   };
 
   return (
