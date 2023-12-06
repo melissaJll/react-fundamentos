@@ -1,8 +1,17 @@
 import Menu from "./Menu";
-// Impportação da lib styled components
+
 import styled from "styled-components";
 
-//Especifica que será dentro do header``
+function Cabecalho() {
+  return (
+    <StyledCabecalho>
+      <h1 onClick={() => alert("Exemplo 1")}>Olá React 😊</h1>
+      <hr />
+      <Menu />
+    </StyledCabecalho>
+  );
+}
+
 const StyledCabecalho = styled.header`
   //header{
   background-color: #bbd6b4;
@@ -19,15 +28,5 @@ const StyledCabecalho = styled.header`
     margin: 8px auto;
   }
 `;
-
-function Cabecalho() {
-  return (
-    <StyledCabecalho>
-      <h1>Olá React 😊</h1>
-      <hr />
-      <Menu />
-    </StyledCabecalho>
-  );
-}
 
 export default Cabecalho;
