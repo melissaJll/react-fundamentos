@@ -50,7 +50,7 @@ function Conteudo() {
           {cursos.map((curso) => (
             // e return um artigo
             <Artigo
-              key={id}
+              key={curso.id}
               titulo={curso.titulo}
               categoria={curso.categoria}
               preco={curso.preco}
