@@ -34,10 +34,16 @@ const StyledConteudo = styled.main`
 `;
 
 function Conteudo() {
+  const exemplo2 = () => {
+    alert("Exemplo 2");
+  };
+
   return (
     <StyledConteudo>
       <section>
         <h2 className="centralizar">Conteúdo da aplicação</h2>
+
+        <button onClick={exemplo2}>Exemplo 2</button>
 
         <p className="centralizar">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
