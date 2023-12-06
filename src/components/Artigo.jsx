@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 const StyledArtigo = styled.article`
   background-color: #c5cfae;
@@ -35,8 +36,16 @@ function Artigo({ titulo, categoria, preco, id }) {
       currency: "BRL",
     });
   }
+
+  const [cor, setCor] = useState("#c5cfae");
+
+  const mudarCor = () => {
+    // if (cor == "#c5cfae") setCor("lightblue");
+    setCor("lightblue");
+  };
+
   return (
-    <StyledArtigo>
+    <StyledArtigo onClick={mudarCor} style={{ backgroundColor: cor }}>
       <h3>
         <span>{categoria}</span>
       </h3>
