@@ -9,6 +9,9 @@ function Conteudo() {
   temos uma escolha/seleção de categoria (aparece tudo) */
   const [categoria, setCategoria] = useState(null);
 
+  const aplicarFiltro2 = (event) => {
+    console.log(event.currentTarget.innerText);
+  };
   const aplicarFiltro = (event) => {
     // Capturamos (após o clique) o texto escrito em cada botão
     const categoriaEscolhida = event.currentTarget.innerText;
@@ -16,6 +19,16 @@ function Conteudo() {
     // E em seguida passamos este texto para o state de categoria
     setCategoria(categoriaEscolhida);
   };
+    /* Gerando um novo array de cursos filtrados */
+    const cursosFiltrados = cursos.filter((curso) => {
+      /* Se o state categoria for igual a uma 
+      das categorias dos cursos, então será retornada
+      a lista de cursos daquela categoria. Senão, será 
+      retornada lista completa devido ao state ser null (ou seja,
+      não há uma categoria para filtrar) */
+      return curso.categoria === categoria || categoria === null;
+    });
+    
   return (
     <StyledConteudo>
       <h2 className="centralizar">Conteúdo da aplicação</h2>
@@ -30,8 +43,8 @@ function Conteudo() {
       <div className="filtros">
         <p>
           <b>Filtrar por: </b>
-          <button onClick={aplicarFiltro}>Front-End</button>
-          <button onClick={aplicarFiltro}>Back-End</button>
+          <button onClick={aplicarFiltro}>Front-end</button>
+          <button onClick={aplicarFiltro}>Back-end</button>
           <button onClick={aplicarFiltro}>Design</button>
         </p>
 
@@ -48,7 +61,7 @@ function Conteudo() {
       </div>
 
       <div className="artigos">
-        {cursos.map((curso) => (
+        {cursosFiltrados.map((curso) => (
           <Artigo
             key={curso.id}
             categoria={curso.categoria}
