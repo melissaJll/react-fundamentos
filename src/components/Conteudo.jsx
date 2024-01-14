@@ -34,6 +34,9 @@ function Conteudo() {
       não há uma categoria para filtrar) */
       return curso.categoria === categoria || categoria === null;
     });
+
+    /* Guardando a quantidade de cursos filtrados */
+    const quantidade = cursosFiltrados.length;
     
   return (
     <StyledConteudo>
@@ -60,7 +63,10 @@ function Conteudo() {
           {categoria && (
             <button onClick={limparFiltro}>🧹 Limpar filtro</button>
           )}
+        </p>
 
+        <p>
+          Quantidade de cursos: <b>{quantidade}</b>
         </p>
 
         {/* Renderização Condicional
@@ -73,6 +79,16 @@ function Conteudo() {
             Você escolheu: <b>{categoria}</b>
           </p>
         )}
+
+        {/* Se quantidade for zero (ou seja, não tem
+        cursos da categoria filtrada), então mostre a 
+        mensagem */}
+        {quantidade === 0 && (
+          <p style={{ color: "red", textAlign: "center" }}>
+            Não há cursos desta categoria!
+          </p>
+        )}
+
       </div>
 
       <div className="artigos">
