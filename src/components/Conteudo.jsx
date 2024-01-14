@@ -9,9 +9,10 @@ function Conteudo() {
   temos uma escolha/seleção de categoria (aparece tudo) */
   const [categoria, setCategoria] = useState(null);
 
-  const aplicarFiltro2 = (event) => {
-    console.log(event.currentTarget.innerText);
-  };
+  // const aplicarFiltro2 = (event) => {
+  //   console.log(event.currentTarget.innerText);
+  // categoria do botão é comparado com curso.categoria - e set categoria
+  // };
   const aplicarFiltro = (event) => {
     // Capturamos (após o clique) o texto escrito em cada botão
     const categoriaEscolhida = event.currentTarget.innerText;
@@ -19,6 +20,11 @@ function Conteudo() {
     // E em seguida passamos este texto para o state de categoria
     setCategoria(categoriaEscolhida);
   };
+
+  const limparFiltro = () => {
+    setCategoria(null);
+  };
+
     /* Gerando um novo array de cursos filtrados */
     const cursosFiltrados = cursos.filter((curso) => {
       /* Se o state categoria for igual a uma 
@@ -46,6 +52,15 @@ function Conteudo() {
           <button onClick={aplicarFiltro}>Front-end</button>
           <button onClick={aplicarFiltro}>Back-end</button>
           <button onClick={aplicarFiltro}>Design</button>
+          <button onClick={aplicarFiltro}>Mobile</button>
+          <button onClick={aplicarFiltro}>Música</button>
+          <button onClick={aplicarFiltro}>Gastronomia</button>
+
+        {/*Renderização condicional se uma categoria for seleconada */}
+          {categoria && (
+            <button onClick={limparFiltro}>🧹 Limpar filtro</button>
+          )}
+
         </p>
 
         {/* Renderização Condicional
