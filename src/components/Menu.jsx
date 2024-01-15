@@ -17,6 +17,12 @@ const StyledMenu = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  .active {
+    background-color: #8154a7;
+    color: black;
+  }
+  
   //hover aninhado
   a {
     text-decoration: none;
