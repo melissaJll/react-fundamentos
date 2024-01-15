@@ -5,6 +5,9 @@ function Produtos() {
 
   const [produtos, setProdutos] = useState([]);
 
+  // State de loading (por padrão inicia ativado)
+  const [loading, setLoading] = useState(true);
+
   // Gerenciando o efeito colateral do carregamento dos dados da API
   // o primeiro parametro é uma função Callback
 
@@ -21,6 +24,7 @@ function Produtos() {
         const dados = await resposta.json();
         console.log(dados);
         setProdutos(dados);
+        setLoading(false); // quando os produtos carregarem na página paramos o loading
       } catch (error) {
         console.error("Houve um erro: " + error);
       }
