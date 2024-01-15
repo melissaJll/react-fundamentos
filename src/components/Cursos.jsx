@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Artigo from "./Artigo";
 import cursos from "../api/cursos";
 
-function Conteudo() {
+function Cursos() {
   /* Criando um gerenciador de state para mudança/filtro
   de categorias. Inicialmente, começa como null pois ainda não
   temos uma escolha/seleção de categoria (aparece tudo) */
@@ -39,7 +39,7 @@ function Conteudo() {
     const quantidade = cursosFiltrados.length;
     
   return (
-    <StyledConteudo>
+    <StyledCursos>
       <h2 className="centralizar">Conteúdo da aplicação</h2>
 
       <p className="centralizar">
@@ -102,11 +102,11 @@ function Conteudo() {
         ))}
       </div>
       
-    </StyledConteudo>
+    </StyledCursos>
   );
 }
 
-const StyledConteudo = styled.main`
+const StyledCursos = styled.main`
 
   .centralizar {
     text-align: center;
@@ -137,4 +137,4 @@ const StyledConteudo = styled.main`
   }
 `;
 
-export default Conteudo;
+export default Cursos;

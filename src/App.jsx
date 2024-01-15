@@ -3,7 +3,7 @@ import Rodape from "./components/Rodape";
 import Home from "./pages/Home";
 import Produtos from "./pages/Produtos";
 import Contato from "./pages/Contato";
-import Conteudo from "./components/Conteudo";
+import Conteudo from "./components/Cursos";
 import Container from "./components/Container";
 
 function App() {
