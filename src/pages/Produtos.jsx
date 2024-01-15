@@ -7,8 +7,14 @@ function Produtos() {
 
   // Gerenciando o efeito colateral do carregamento dos dados da API
   // o primeiro parametro é uma função Callback
+
+  // Fluxo geral de funcionamento do código abaixo:
+  // 1) useEffect é carregado UMA vez e APÓS a montagem do page (Produtos)
+  // obs:o [] indica que o useEffect não tem dependencias adicionais e que será executado somente UMA VEZ
+  // 2) Em seguida, ele executa a função carregarDados
+  // 3) Ao término dela, atualiza o state (produtos)
+
   useEffect(() => {
-    // carrega uma vez como efeito da renderização da página
     const carregarDados = async () => {
       try {
         const resposta = await fetch("https://fakestoreapi.com/products");
