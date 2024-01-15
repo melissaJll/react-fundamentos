@@ -28,9 +28,24 @@ function Produtos() {
 
     carregarDados();
   }, []);
-  //, segundo parametro lista
 
-  return <h2>Produtos</h2>;
+  //não usamos dados porque é local, como encapsulameto usamos produtos/setProdutos
+  //set definiu dados em produtos
+
+  return (
+    <article>
+      <h2>Produtos</h2>
+      {produtos.map((produto) => {
+        return (
+          <section key={produto.id}>
+            <h3>{produto.title}</h3>
+            <p>Preço: {produto.price}</p>
+            <p>{produto.description}</p>
+          </section>
+        );
+      })}
+    </article>
+  );
 }
 
 export default Produtos;
