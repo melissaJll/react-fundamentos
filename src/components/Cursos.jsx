@@ -106,7 +106,7 @@ function Cursos() {
   );
 }
 
-const StyledCursos = styled.main`
+const StyledCursos = styled.section`
 
   .centralizar {
     text-align: center;
