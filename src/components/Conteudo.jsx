@@ -107,16 +107,7 @@ function Conteudo() {
 }
 
 const StyledConteudo = styled.main`
-  width: 83vw;
-  margin: 1rem auto;
-  background-color: #f3f3ed;
-  padding: 1rem;
-  box-shadow: #085508 0px 0px 1px inset;
 
-  h2,
-  p {
-    padding: 0.2rem 0;
-  }
   .centralizar {
     text-align: center;
   }
