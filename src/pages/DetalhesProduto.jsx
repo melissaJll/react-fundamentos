@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import imageloading from "../assets/loading.svg";
+import Loading from "../components/Loading";
 
 function DetalhesProduto() {
   // Usamos o hook useParams do react router DOM para ter acesso aos parametros da rota dinâmica neste caso, o parametro chamdado "id".
@@ -30,11 +30,9 @@ function DetalhesProduto() {
   return (
     <article>
       {loading ? (
-        <p style={{ textAlign: "center" }}>
-          <img src={imageloading} alt="Carregando" />
-        </p>
+        <Loading />
       ) : (
-        <section>
+        <>
           <h2>{produto.title} </h2>
           <p>{produto.description}</p>
           <p>
@@ -46,7 +44,7 @@ function DetalhesProduto() {
           </p>
 
           <img src={produto.image} alt="" height={500} />
-        </section>
+        </>
       )}
     </article>
   );
