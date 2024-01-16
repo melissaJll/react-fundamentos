@@ -6,6 +6,7 @@ function Produtos() {
   // o state "produtos" é iniciado como um array vazio. Posteriormente (após o carregamento de dados da API). ele será preenchidp cos os objetos/produtos.
 
   const [produtos, setProdutos] = useState([]);
+  //   [] - Array de todos os produtos
 
   // State de loading (por padrão inicia ativado)
   const [loading, setLoading] = useState(true);

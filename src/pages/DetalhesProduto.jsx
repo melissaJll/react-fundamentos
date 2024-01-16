@@ -5,7 +5,8 @@ function DetalhesProduto() {
   // Usamos o hook useParams do react router DOM para ter acesso aos parametros da rota dinâmica neste caso, o parametro chamdado "id".
   const { id } = useParams();
 
-  const [produto, setProduto] = useState([]);
+  const [produto, setProduto] = useState({});
+  //   {} - Objeto trazido de apenas um produto
 
   useEffect(() => {
     const carregarDados = async () => {
