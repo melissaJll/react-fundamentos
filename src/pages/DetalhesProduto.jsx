@@ -34,7 +34,7 @@ function DetalhesProduto() {
         <b>Preço: {produto.price}</b>
       </p>
 
-      <img src="" alt="" />
+      <img src={produto.image} alt="" height={500} />
     </article>
   );
 }
