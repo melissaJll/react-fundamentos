@@ -8,7 +8,7 @@
 
 - Array vazio []: o efeito será executado apenas uma vez após a montagem do componente.
 
-- Array com elementos/variavéis[variável]: o efeito será executado quando os elementos/variavéis mudarem (id?)
+- Array com elementos/variavéis[variável]: o efeito será executado quando os elementos/variavéis mudarem
 
 ## 11-navegacao-usando-rotas
 
