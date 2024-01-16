@@ -1,5 +1,9 @@
 # Fundamentos de React
 
+## 12-gerenciamento-de-efeitos-colaterais
+
+` Efeitos colaterais` no React são operações que não tem ligação direta com a renderização do componente, como por exemplo solicitações de API e manipulação de eventes. Usamos o **hook** `useEffect` para garantir que esses efeitos colaterais ocorram no momento adequado do ciclo de vida do componente, evitando execuções repetitivas e problemas de xarregamento e desempenho
+
 ## 11-navegacao-usando-rotas
 
 O React suporta a navegação/links como Single Page Application (SPA) usando uma biblioteca adicional chamada **React Router DOM**.
@@ -8,6 +12,7 @@ Portanto, é necessário instalar esta dependência:
 
 `npm install react-router-dom`
 `npm install react-router-dom@^6.20.1`
+
 ---
 
 ## 09-gerenciamento de-estados-dos-componentes

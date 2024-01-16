@@ -35,7 +35,6 @@ function Produtos() {
 
   //não usamos dados porque é local, como encapsulameto usamos produtos/setProdutos
   //set definiu dados em produtos
-
   return (
     <article>
       <h2>Produtos</h2>
